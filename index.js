@@ -1,5 +1,7 @@
 'use strict';
 
+var isObject = require('isobject');
+
 module.exports = function(arr, prop, idx) {
   var len = arr.length;
   var i = -1;
@@ -13,4 +15,5 @@ module.exports = function(arr, prop, idx) {
       ele[prop] = false;
     }
   }
+  return arr;
 };
