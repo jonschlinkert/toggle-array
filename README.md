@@ -23,9 +23,16 @@ var arr = [
 ];
 
 console.log(toggle(arr, 'foo', 2));
-// [ { foo: false },
+// [ { foo: true },
 //   { foo: false },
 //   { foo: true },
+//   { foo: true },
+//   { foo: true } ]
+
+console.log(toggle(arr, 'foo', 2));
+// [ { foo: false },
+//   { foo: true },
+//   { foo: false },
 //   { foo: false },
 //   { foo: false } ]
 ```
